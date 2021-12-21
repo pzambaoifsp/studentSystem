@@ -88,7 +88,6 @@ public class Nota {
 	}
 	
 	public void alterarNota() {
-		System.out.println("editadado");
 		new NotaDao().alterarNota(this);
 	}
 
