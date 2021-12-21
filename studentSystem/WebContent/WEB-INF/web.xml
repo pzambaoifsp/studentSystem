@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>StudentSystem</display-name>
+  
+  <servlet>
+    <servlet-name>cadastrar</servlet-name>
+    <servlet-class>curso.controller.cadastrarCursoController</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>modificar</servlet-name>
+    <servlet-class>curso.controller.modificarCursoController</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>buscar</servlet-name>
+    <servlet-class>curso.controller.buscarCursoController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>cadastrar</servlet-name>
+    <url-pattern>/cadastrarCurso</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>modificar</servlet-name>
+    <url-pattern>/modificarCurso</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>buscar</servlet-name>
+    <url-pattern>/buscarCursos</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>cadastrarNota</servlet-name>
+    <servlet-class>nota.controller.cadastrarNotaController</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>modificarNota</servlet-name>
+    <servlet-class>nota.controller.modificarNotaController</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>buscarNotas</servlet-name>
+    <servlet-class>nota.controller.buscarNotaController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>cadastrarNota</servlet-name>
+    <url-pattern>/cadastrarNota</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>modificarNota</servlet-name>
+    <url-pattern>/modificarNota</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>buscarNotas</servlet-name>
+    <url-pattern>/buscarNotas</url-pattern>
+  </servlet-mapping>
+
+</web-app>
